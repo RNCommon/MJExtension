@@ -323,10 +323,10 @@ static NSNumberFormatter *numberFormatter_;
             MJPropertyType *type = property.type;
             Class propertyClass = type.typeClass;
             if (!type.isFromFoundation && propertyClass) {
-                value = [value mj_keyValues];
+                value = [value mj_keyValuesWithIgnoredKeys:ignoredKeys];
             } else if ([value isKindOfClass:[NSArray class]]) {
                 // 3.处理数组里面有模型的情况
-                value = [NSObject mj_keyValuesArrayWithObjectArray:value];
+                value = [NSObject mj_keyValuesArrayWithObjectArray:value ignoredKeys:ignoredKeys];
             } else if (propertyClass == [NSURL class]) {
                 value = [value absoluteString];
             }
