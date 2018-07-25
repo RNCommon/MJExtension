@@ -329,8 +329,10 @@ static NSNumberFormatter *numberFormatter_;
                 value = [NSObject mj_keyValuesArrayWithObjectArray:value ignoredKeys:ignoredKeys];
             } else if (propertyClass == [NSURL class]) {
                 value = [value absoluteString];
+            } else if([value isKindOfClass:NSClassFromString(@"NSConcreteValue")]) {
+                CGSize size = [value CGSizeValue];
+                value = @{@"width":@(size.width),@"height":@(size.height)};
             }
-            
             // 4.赋值
             if ([clazz mj_isReferenceReplacedKeyWhenCreatingKeyValues]) {
                 NSArray *propertyKeys = [[property propertyKeysForClass:clazz] firstObject];

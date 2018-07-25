@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22087D142108546B0084EE0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22087D132108546B0084EE0C /* UIKit.framework */; };
 		2D8FC6B81BEF7E89004471E9 /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8FC6B71BEF7E89004471E9 /* MJExtensionConfig.m */; };
 		2DE3CD971BEF7B3800DA0F2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE3CD961BEF7B3800DA0F2E /* main.m */; };
 		2DE3CD9A1BEF7B3800DA0F2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE3CD991BEF7B3800DA0F2E /* AppDelegate.m */; };
@@ -100,6 +101,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22087D132108546B0084EE0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D8FC6B61BEF7E89004471E9 /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
 		2D8FC6B71BEF7E89004471E9 /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		2DE3CD921BEF7B3800DA0F2E /* MJExtensionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJExtensionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22087D142108546B0084EE0C /* UIKit.framework in Frameworks */,
 				C37522BC1CF0AC320037E747 /* MJExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +201,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22087D122108546B0084EE0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22087D132108546B0084EE0C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D8FC6B91BEF8082004471E9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +228,7 @@
 				2DE3CDB91BEF7B3800DA0F2E /* MJExtensionExampleUITests */,
 				C37522B61CF0AC320037E747 /* MJExtension */,
 				2DE3CD931BEF7B3800DA0F2E /* Products */,
+				22087D122108546B0084EE0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
